@@ -1,0 +1,74 @@
+{"intents": [
+    {
+        "tag":"hello",
+        "patterns":["Hi", "Hey", "Good Day","Greetings","What's up","What up","Morning", "Greetings Assistant","Greetings Necro"],
+        "responses":["Hello There", "Hey There", "Morning Fellow Investor", "Good Day"]
+    },
+    {
+        "tag": "plot_chart",
+        "patterns":["Plot chart", "Plot a chart","Could you plot a chart","Could you plot a stock chart", "I want you to plot a stock price!","Candlestick Chart"],
+        "responses":["Plotting A Chart For You"]
+
+    },
+    {
+        "tag":"add_portfolio",
+        "patterns":["Add a stock to my portfolio","Add a stock","Add stock","Add a stock to my list","Add stock to my list","Add stock to my portfolio","Buy a Stock","Buy Stock","Buy"],
+        "responses":["Adding a stock for you"]
+
+    },
+    {
+        "tag":"remove_portfolio",
+        "patterns":["remove a stock to my portfolio","remove a stock","remove stock","remove a stock to my list","remove stock to my list","remove stock to my portfolio", "Sold a stock","I sold a stock"],
+        "responses":["Removing a stock for you"]
+
+    },
+    {
+        "tag":"show_portfolio",
+        "patterns":["Show me my stock portfolio","Show me my portfolio","Tell me about my stock portfolio", "Tell me about my portfolio","Show Portfolio", "Show Stock Portfolio","Show me my investments","Tell me about my investments"],
+        "responses":["Fetching your stock portfolio"]
+    },
+    {
+        "tag": "stock_price",
+        "patterns":["I want to know the price of a stock", "Price of stock", "Show me the price of a stock","I want to know about a stock","Get price","get the price for a stock","Show me the price of a company"],
+        "responses":["Price: "]
+
+
+    },
+    {
+        "tag":"show_amount",
+        "patterns":["Show me my stock purchase diversification","Show me my diversification","diversification", "Tell me about diversification","What is the range of my stock purchase", "Range of Stock Purchase","Stock Purchase","Pie Chart of Stock Purchase","Show pie chart"],
+        "responses":["Fetching your stock portfolio"]
+
+    },
+    {
+        "tag":"delete_all",
+        "patterns":["Can you delete my entire portfolio?", "Delete entire portfolio","Please delete my entire portfolio","Wipe portfolio","Delete all stocks from portfolio","Please Remove all stocks from my portfolio"],
+        "responses":["Portfolio Has Been Wiped Clean"]
+    },
+    {
+        "tag":"portfolio_worth",
+        "patterns":["How much is my portfolio worth?", "Portfolio Worth","What is my portfolio worth?","Worth of Portfolio","Portfolio Price"],
+        "responses":["Portfolio Worth"]
+
+    },
+    {
+        "tag":"portfolio_gains",
+        "patterns":["How is my portfolio performing?", "How are my gains?","Am I in the profit?","Am I profiting","Am I in the loss","Is my portfolio making money"],
+        "responses": ["Portfolio Gains"]
+    },
+    {
+        "tag":"predict_stock",
+        "patterns":["Predict a stock price", "Predict stock","Predict this stock price for me","What is the predicted price of this stock","Stock Price Prediction","Stock Prices Prediction"],
+        "responses":["Stock Price: "]
+    },
+    {
+        "tag":"predict_crypto",
+        "patterns":["Predict a crypto", "Predict crypto","Predict this crypto price for me","What is the price of this crypto","Crypto Price","Crypto prices"],
+        "responses":["Crypto Price: "]
+    },
+    {
+        "tag":"bye",
+        "patterns":["bye", "I must take my leave", "goodbye","stop","end","I have to go","End program", "Stop Simulation"],
+        "responses":["Goodbye"]
+    }
+]}

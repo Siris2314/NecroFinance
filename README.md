@@ -18,6 +18,13 @@ Upon running this file, you will see a bunch of training code run past, this is 
 
 <img width="978" alt="image" src="https://user-images.githubusercontent.com/25334323/142426106-9ed683cb-d427-4408-a156-599815e7d087.png">
 
+You will be then prompted with a simple message screen: 
+
+<img width="1165" alt="image" src="https://user-images.githubusercontent.com/25334323/142426559-867c5359-040d-40da-b4b2-ce486ba42f6e.png">
+
+Now here are a list of features currently present in NecroFinance, and also how some of the user data is stored: 
+
+
 
 
 

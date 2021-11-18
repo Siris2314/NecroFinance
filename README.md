@@ -24,6 +24,11 @@ You will be then prompted with a simple message screen:
 
 Now here are a list of features currently present in NecroFinance, and also how some of the user data is stored: 
 
+        - Add Stocks: Adds stock to your portfolio, stored in a local SQL database
+        - Remove Stocks: Removes stocks from your portfolio, removes it from database as well
+        - Show Stock Portfolio: Brings up a table that displays the stock that you own and the respective number of shares, only available in browser format for now
+        - Wipe/Erase Portfolio: Completely erase all stocks and shares in your current portfolio
+        - Show Diversification: Brings up a pie chart visual that show's how diverse your stock portfolio is, available in browser, png, jpg format
 
 
 

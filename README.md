@@ -29,8 +29,10 @@ Now here are a list of features currently present in NecroFinance, and also how 
         - Show Stock Portfolio: Brings up a table that displays the stock that you own and the respective number of shares, only available in browser format for now
         - Wipe/Erase Portfolio: Completely erase all stocks and shares in your current portfolio
         - Show Diversification: Brings up a pie chart visual that show's how diverse your stock portfolio is, available in browser, png, jpg format
-
-
-
-
-
+        - Predict Stock Price: Predicts the next day closed stock price of a company
+        - Predict Crypto Price: Predicts the next X number of days of a crypto price, X depends on user input
+        - Stock Portfolio Worth: Shows current stock portfolio worth based on current closed prices
+        - Stock Gains: Shows gains/loss within a 1 day margin(for now)
+        - Plot Stock Chart: Shows the overall price change of a stock in a visual format
+      
+For now these are all the current features in NecroFinance, my plan currently is to add more intents and phrases to make the assistant part of this project much more powerful, which should be coming in forthcoming updates. 

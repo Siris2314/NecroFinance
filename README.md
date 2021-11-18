@@ -14,6 +14,11 @@ To start up the assistant simply open up your terminal/powershell window and ass
   python3 main.py
 ```
 
+Upon running this file, you will see a bunch of training code run past, this is for the assistant to train on the intents.json data in order to provide the assistant feature:
+
+<img width="978" alt="image" src="https://user-images.githubusercontent.com/25334323/142426106-9ed683cb-d427-4408-a156-599815e7d087.png">
+
+
 
 
 

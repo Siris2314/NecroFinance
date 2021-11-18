@@ -36,3 +36,10 @@ Now here are a list of features currently present in NecroFinance, and also how 
         - Plot Stock Chart: Shows the overall price change of a stock in a visual format
       
 For now these are all the current features in NecroFinance, my plan currently is to add more intents and phrases to make the assistant part of this project much more powerful, which should be coming in forthcoming updates. 
+
+Current Version Gameplan:
+
+ -  Version 1.0.0 - Release
+ -  Version 1.0.1 - Fixing Intent Bugs and Input failure(rare error) - Tentative Early Winter 2021
+ -  Version 1.1 - More Phrases for a much more dynamic assistant - Tentative Late Winter 2021
+ -  Version 1.2 = Crypto Trading - Tentative Early Summer 2022

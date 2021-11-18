@@ -7,7 +7,7 @@ A powerful financial assistant built with databases, Neural Networks, and Natura
 
 ## Getting Started 
 
-After downloading the files, keep them in the exact same file/directory structure as show in this repo. The main file that will be used is main.py, as the assistant is implemented in this file. 
+After downloading the files, keep them in the exact same file/directory structure as shown in this repo. The main file that will be used is main.py, as the assistant is implemented in this file. 
 
 To start up the assistant simply open up a terminal/powershell window and check if you are inside the correct directory. To do this, type ``ls`` into the command line. main.py should be listed below similar to the image below:
 
@@ -48,6 +48,6 @@ Additional intents and phrases are currently planned to be added into NecroFinan
 Current Version Gameplan:
 
  -  Version 1.0.0 - Release
- -  Version 1.0.1 - Fixing Intent Bugs and Input failure(rare error) - Tentative Early Winter 2021
+ -  Version 1.0.1 - Fixing Intent Bugs and Input failure (rare error) - Tentative Early Winter 2021
  -  Version 1.1 - More Phrases for a much more dynamic assistant - Tentative Late Winter 2021
  -  Version 1.2 \[Crypto Trading\] - Tentative Early Summer 2022

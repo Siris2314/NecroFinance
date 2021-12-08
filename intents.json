@@ -90,6 +90,12 @@
         "responses":["Crypto Price: "]
     },
     {
+        "tag":"analyze_statement",
+        "patterns":["Analyze a Company's Financial Earnings", "Analyze Financial Statement", "Analyze Company Statement"],
+        "responses":["Comapny Statement: "]
+
+    },
+    {
         "tag":"bye",
         "patterns":["bye", "I must take my leave", "goodbye","stop","end","I have to go","End program", "Stop Simulation"],
         "responses":["Goodbye"]

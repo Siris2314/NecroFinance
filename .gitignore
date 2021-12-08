@@ -1,5 +1,9 @@
 Necro Finance_classes.pkl
 Necro Finance_words 2.pkl
-.vscode
-__pycache__
+./vscode
+./__pycache__
+env.txt
+tictactoe.py    
+tictactoe2.py 
+
 

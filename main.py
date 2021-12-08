@@ -5,6 +5,7 @@ import pandas as pd
 import pandas_datareader as web
 import mplfinance as mpf
 import numpy as np
+import requests 
 from stock_predict import stock_prediction
 from crypto_predict import predict_crypto
 import plotly.io as pio
@@ -27,8 +28,12 @@ from time import sleep
 from prettytable import PrettyTable
 import curses 
 from curses import wrapper
+from dotenv import load_dotenv
+from dotenv import dotenv_values
 
 
+
+key = open('env.txt', 'r').read()
 yf.pdr_override()
 
 
@@ -121,6 +126,26 @@ def show_portfolio():
         )
 
         fig.show()
+
+def analyze_statement():
+ try:
+    company = input("Enter the company who's statement you want me to analyze: ")
+    years = input("Enter the number of years from the current one for me to analyze: ")
+    company = str(company).upper()
+    years = int(years)
+    income_statement = requests.get(f"https://financialmodelingprep.com/api/v3/income-statement/{company}?limit={years}&apikey={key}")
+    income_statement = income_statement.json()
+    revenue = list(reversed([income_statement[i]['revenue'] for i in range(len(income_statement))]))
+    profits = list(reversed([income_statement[i]['grossProfit'] for i in range(len(income_statement))]))
+
+    plt.plot(revenue, label="Revenue")
+    plt.plot(profits, label ="Profit")
+    plt.legend(loc="upper left")
+    plt.show()
+ except:
+     print("An Error has occurred please retry this command")
+
+
 
 
 def show_amount():
@@ -313,6 +338,7 @@ mappings = {
     "stock_price": predict_stock,
     "predict_crypto": crypto_predict,
     "portfolio_gains": portfolio_gains,
+    "analyze_statement":analyze_statement,
     "bye": bye,
 }
 

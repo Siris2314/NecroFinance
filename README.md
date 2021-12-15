@@ -1,3 +1,7 @@
+<p align="center">
+  <img align="center" width="700" alt="image" src="https://user-images.githubusercontent.com/73268218/146130513-28b15000-1a07-4f29-96d4-1e7839a0f750.png">
+</p>
+
 # NecroFinance
 
 A powerful financial assistant built with databases, Neural Networks, and Natural Language Processing. NecroFinance simulates Stock Trading, Portfolio Diversification and Management, Stock and Crypto Prediction, and Visualization of Day-to-Day Trading Gains and Losses.

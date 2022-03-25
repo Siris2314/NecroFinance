@@ -25,7 +25,7 @@
             "What's new",
             "What's up",
             "Yo"],
-        "responses":["Hello There", "Hey There", "Morning Fellow Investor", "Good Day","Greetings Investor","Good Morning"]
+        "responses":["Hello There", "Hey There", "Morning Fellow Investor", "Good Day","Greetings Investor","Good Morning","I am doing just fine how are you",""]
     },
     {
         "tag": "plot_chart",
@@ -62,6 +62,11 @@
         "patterns":["Show me my stock purchase diversification","Show me my diversification","diversification", "Tell me about diversification","What is the range of my stock purchase", "Range of Stock Purchase","Stock Purchase","Pie Chart of Stock Purchase","Show pie chart"],
         "responses":["Fetching your stock portfolio"]
 
+    },
+    {
+        "tag":"eth_transac",
+        "patterns":["Show me the transactions of a ethereum wallet", "Ethereum Wallet transactions", "Transactions of Ethereum Wallet", "Transactions of ETH Wallet","Eth Wallet Transactions"],
+        "responses":["Fetching ETH Transactions"]
     },
     {
         "tag":"delete_all",

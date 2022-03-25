@@ -28,8 +28,8 @@ from time import sleep
 from prettytable import PrettyTable
 import curses 
 from curses import wrapper
-from dotenv import load_dotenv
-from dotenv import dotenv_values
+from eth_check import get_transactions, get_account_balance
+
 
 
 
@@ -45,11 +45,15 @@ c = conn.cursor()
 c.execute(
     """CREATE TABLE IF NOT EXISTS portfolio(company_name TEXT,stock_amount INTEGER)"""
 )
+c.execute(
+    """CREATE TABLE IF NOT EXISTS crypto(crypto_symbol TEXT, crypto_amount INTEGER)"""
+)
 
 
 def save_portfolio():
     conn.commit()
     c.execute("""DELETE FROM portfolio WHERE stock_amount = 0""")
+    c.execute("""DELETE FROM crypto WHERE crypto_amount = 0""")
 
 
 def add_portfolio():
@@ -198,6 +202,13 @@ def predict_stock():
     end_date = input("Enter the ending date for the model to predict(YYYY-MM-DD): ")
     print(stock_prediction((start_date), (end_date), str(company)))
 
+def eth_account_balance():
+#   try:
+    address = input("Enter in the address of the Ethereum Wallet: ")
+    print(get_account_balance("Current Account Balance in USD: " + str(address)))
+#   except:
+#       print("An error has occurred, please try again later")
+
 
 def crypto_predict():
     try:
@@ -339,6 +350,7 @@ mappings = {
     "predict_crypto": crypto_predict,
     "portfolio_gains": portfolio_gains,
     "analyze_statement":analyze_statement,
+    "eth_transac":eth_account_balance,
     "bye": bye,
 }
 
@@ -371,6 +383,8 @@ while True:
             "Stock Portfolio Worth",
             "Stock Gains",
             "Plot Stock Chart",
+            "Analyze Income Statement",
+            "Ethereum Transaction",
             "Continue",
         ]
 
@@ -398,6 +412,11 @@ while True:
                 os.system("clear" if os.name == "nt" else "clear")
                 table = PrettyTable(["Command Name", "Example Usage"])
                 table.add_row(["Remove Stocks", "Remove a Stock to My Portfolio"])
+                print(table)
+            elif list[menu_entry_index] == "Ethereum Transaction":
+                os.system("clear" if os.name == "nt" else "clear")
+                table = PrettyTable(["Command Name", "Example Usage"])
+                table.add_row(["Ethereum Transactions", "Get me the transactions of a ethereum wallet"])
                 print(table)
             elif list[menu_entry_index] == "Show Stock Portfolio":
                 os.system("clear" if os.name == "nt" else "clear")

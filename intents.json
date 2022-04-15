@@ -80,6 +80,11 @@
 
     },
     {
+        "tag":"weather_forecast",
+        "patterns":["What is the weather looking like today?", "Weather today","Weather forecast","forecast","forecast of weather","weather pls"],
+        "responses":["Forecast"]
+    },
+    {
         "tag":"portfolio_gains",
         "patterns":["How is my portfolio performing?", "How are my gains?","Am I in the profit?","Am I profiting","Am I in the loss","Is my portfolio making money"],
         "responses": ["Portfolio Gains"]

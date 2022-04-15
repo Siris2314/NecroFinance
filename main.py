@@ -29,6 +29,7 @@ from prettytable import PrettyTable
 import curses 
 from curses import wrapper
 from eth_check import get_transactions, get_account_balance
+from weather import Weather
 
 
 
@@ -203,11 +204,11 @@ def predict_stock():
     print(stock_prediction((start_date), (end_date), str(company)))
 
 def eth_account_balance():
-#   try:
+  try:
     address = input("Enter in the address of the Ethereum Wallet: ")
     print(get_account_balance("Current Account Balance in USD: " + str(address)))
-#   except:
-#       print("An error has occurred, please try again later")
+  except:
+      print("An error has occurred, please try again later")
 
 
 def crypto_predict():
@@ -325,6 +326,14 @@ def plot_chart():
     plt.pause(3)
     plt.close()
 
+def forecast():
+    city = str(input("Please enter in the city to show forecast: "))
+    option = str(input("Would you like it in Celcius or Farenheit?: "))
+    Weather.weatherreport(Weather,  city, option)
+
+
+    
+
 
 def bye():
     os.system("clear" if os.name == "nt" else "clear")
@@ -348,6 +357,7 @@ mappings = {
     "portfolio_worth": portfolio_worth,
     "stock_price": predict_stock,
     "predict_crypto": crypto_predict,
+    "weather_forecast":forecast,
     "portfolio_gains": portfolio_gains,
     "analyze_statement":analyze_statement,
     "eth_transac":eth_account_balance,

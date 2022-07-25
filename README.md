@@ -54,4 +54,4 @@ Current Version Gameplan:
  -  Version 1.0.0 - Release
  -  Version 1.0.1 - Fixing Intent Bugs and Input failure (rare error) - Tentative Early Winter 2021
  -  Version 1.1 - More Phrases for a much more dynamic assistant - Tentative Late Winter 2021
- -  Version 1.2 \[Crypto Trading\] - Tentative Early Summer 2022
+ -  Version 1.2 \[Crypto Trading\] - Tentative Early Winter 2022

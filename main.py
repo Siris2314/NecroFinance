@@ -1,10 +1,8 @@
 from neuralintents import GenericAssistant
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import pandas as pd
 import pandas_datareader as web
 import mplfinance as mpf
-import numpy as np
 import requests 
 from stock_predict import stock_prediction
 from crypto_predict import predict_crypto
@@ -15,9 +13,7 @@ import sys
 import datetime as dt
 import sqlite3
 from io import BytesIO
-from fpdf import FPDF
 from colorama import Fore, Back, Style
-import PySimpleGUI as sg
 from PIL import Image
 import os
 import yfinance as yf
@@ -26,11 +22,9 @@ from simple_term_menu import TerminalMenu
 from rich.progress import track
 from time import sleep
 from prettytable import PrettyTable
-import curses 
-from curses import wrapper
 from eth_check import get_transactions, get_account_balance
 from weather import Weather
-
+from marketmap import make_plot
 
 
 
@@ -331,10 +325,6 @@ def forecast():
     option = str(input("Would you like it in Celcius or Farenheit?: "))
     Weather.weatherreport(Weather,  city, option)
 
-
-    
-
-
 def bye():
     os.system("clear" if os.name == "nt" else "clear")
     print(
@@ -395,6 +385,7 @@ while True:
             "Plot Stock Chart",
             "Analyze Income Statement",
             "Ethereum Transaction",
+            "Stock Market Map",
             "Continue",
         ]
 
